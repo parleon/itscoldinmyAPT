@@ -37,17 +37,16 @@ func main() {
 	go func() {
 		ch <- sum(randslice[:len(randslice)/2])
 	}()
-	v := <- ch
+	v := <-ch
 	total = (sum(randslice[len(randslice)/2:]) + v)
 	elapsed = time.Since(start)
 	fmt.Println(total, elapsed)
-
 
 }
 
 func sum(slice []int) int {
 	var total int
-	for i := 0; i < len(slice); i++{
+	for i := 0; i < len(slice); i++ {
 		total += slice[i]
 	}
 	return total
