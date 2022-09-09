@@ -36,8 +36,7 @@ func main() {
 	go func() {
 		ch <- sum(randslice[:len(randslice)/2])
 	}()
-	v := <-ch
-	total = (sum(randslice[len(randslice)/2:]) + v)
+	total = (sum(randslice[len(randslice)/2:]) + <- ch)
 	elapsed = time.Since(start)
 	fmt.Println(total, elapsed)
 
