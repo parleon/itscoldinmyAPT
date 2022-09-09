@@ -3,9 +3,8 @@
 programs are run by invoking the executable with a single command line argument representing slice size
 e.g. ./q1 1000
 
-q1 slice isnt regenerated after first summation since go compiler does not create a constant
-
-q1 slices were tested to see if properly generated with random numbers, however, for ease of readability the slices are not printed
+q1 slice isnt regenerated after first summation since go compiler does not create a magical constant.
+q1 and q2 slices were tested to see if properly generated with random numbers and stayed random when necessary, however, for ease of readability the slices are not printed
 
 
 
