@@ -23,7 +23,6 @@ func main() {
 	for i := 0; i < x; i++ {
 		randslice[i] = rand.Int() % 1000
 	}
-	fmt.Println(randslice)
 
 	// find sum, print sum and time took to find sum
 	start := time.Now()
